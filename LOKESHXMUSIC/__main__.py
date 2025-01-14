@@ -1,15 +1,15 @@
 import asyncio
 import importlib
-
+from sys import argv
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from LOKESHXMUSIC import LOGGER, app, userbot
-from LOKESHXMUSIC.core.call import Anony
-from LOKESHXMUSIC.misc import sudo
-from LOKESHXMUSIC.plugins import ALL_MODULES
-from LOKESHXMUSIC.utils.database import get_banned_users, get_gbanned
+from BrandrdXMusic import LOGGER, app, userbot
+from BrandrdXMusic.core.call import Hotty
+from BrandrdXMusic.misc import sudo
+from BrandrdXMusic.plugins import ALL_MODULES
+from BrandrdXMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,27 +35,27 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("LOKESHXMUSIC.plugins" + all_module)
-    LOGGER("LOKESHXMUSIC.plugins").info("Successfully Imported Modules...")
+        importlib.import_module("BrandrdXMusic.plugins" + all_module)
+    LOGGER("BrandrdXMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await Anony.start()
+    await Hotty.start()
     try:
-        await Anony.stream_call("https://te.legra.ph/file/e5fa97ef51ded24b993ae.mp4")
+        await Hotty.stream_call("https://graph.org/file/e999c40cb700e7c684b75.mp4")
     except NoActiveGroupCall:
-        LOGGER("LOKESHXMUSIC").error(
+        LOGGER("FrozenXMusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
         )
         exit()
     except:
         pass
-    await Anony.decorators()
-    LOGGER("LOKESHXMUSIC").info(
-       "ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ @ʙʀᴀɴᴅᴇᴅᴋɪɴɢ82 ᴊᴏɪɴ @ʙʀᴀɴᴅʀᴅ_ʙᴏᴛ , @ʙʀᴀɴᴅᴇᴅ_ᴡᴏʀʟᴅ ꜰᴏʀ ᴀɴʏ ɪꜱꜱᴜᴇꜱ"
+    await Hotty.decorators()
+    LOGGER("FrozenXMusic").info(
+        "ᴅʀᴏᴘ ʏᴏᴜʀ ɢɪʀʟꜰʀɪᴇɴᴅ'ꜱ ɴᴜᴍʙᴇʀ ᴀᴛ @Frozensupport1 ᴊᴏɪɴ @vibeshiftbots , @Frozensupport1"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("LOKESHXMUSIC").info("Stopping LokeshX Music Bot...")
+    LOGGER("FrozenXMusic").info("Effect bot dayandırılır...")
 
 
 if __name__ == "__main__":

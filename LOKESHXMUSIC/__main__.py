@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from BrandrdXMusic import LOGGER, app, userbot
-from BrandrdXMusic.core.call import Hotty
-from BrandrdXMusic.misc import sudo
-from BrandrdXMusic.plugins import ALL_MODULES
-from BrandrdXMusic.utils.database import get_banned_users, get_gbanned
+from LOKESHXMusic import LOGGER, app, userbot
+from LOKESHXMusic.core.call import Hotty
+from LOKESHXMusic.misc import sudo
+from LOKESHXMusic.plugins import ALL_MODULES
+from LOKESHXMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,8 +35,8 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("BrandrdXMusic.plugins" + all_module)
-    LOGGER("BrandrdXMusic.plugins").info("Successfully Imported Modules...")
+        importlib.import_module("LokeshXMusic.plugins" + all_module)
+    LOGGER("LokeshXMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
     await Hotty.start()
     try:

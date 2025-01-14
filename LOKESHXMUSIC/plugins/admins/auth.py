@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from LOKESHXMUSIC import app
-from LOKESHXMUSIC.utils import extract_user, int_to_alpha
-from LOKESHXMUSIC.utils.database import (
+from BrandrdXMusic import app
+from BrandrdXMusic.utils import extract_user, int_to_alpha
+from BrandrdXMusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from LOKESHXMUSIC.utils.decorators import AdminActual, language
-from LOKESHXMUSIC.utils.inline import close_markup
+from BrandrdXMusic.utils.decorators import AdminActual, language
+from BrandrdXMusic.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
